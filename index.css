@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-grey: #262e38;
+  --dark-blue: hsl(212, 19%, 14%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  color: var(--light-grey);
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: var(--dark-blue);
+  max-width: 20rem;
+  padding: 2rem;
+  gap: 1.3rem;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header__container p {
+  line-height: 1.7;
+}
+
+.header__container h1 {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.header__container i {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  background-color: var(--dark-grey);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.buttons__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.buttons__container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.buttons__container li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 1.3rem;
+  background-color: var(--dark-grey);
+  border-radius: 50%;
+  transition: all .2s ease;
+}
+
+.buttons__container li:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.buttons__container .marked {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.buttons__container > a {
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 0.6rem;
+    transition: all .2s ease;
+}
+
+.buttons__container > a:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
