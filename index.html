@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -17,8 +16,7 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <!-- Rating state start -->
-    <article class="main__container">
+    <article class="main__container" id="main-card">
       <header class="header__container">
         <i>
           <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -46,14 +44,21 @@
       </section>
     </article>
 
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-    <div class="oculto">
-      You selected
-      <!-- Add rating here -->
-      out of 5 Thank you! We appreciate you taking the time to give a rating. If
-      you ever need more support, don’t hesitate to get in touch!
-    </div>
+    <article class="main__container" id="thanks-card">
+      <header class="header__container thanks__header" >
+        <picture class="img">
+          <img
+          src="images/illustration-thank-you.svg"
+          alt="illustration of a phone getting a vote"
+          />
+        </picture>
+        <label id="result-text"></label>
+        <h1>Thank you!</h1>
+      </header>
+      <p class="thanks__text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </article>
   </body>
 </html>
