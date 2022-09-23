@@ -90,17 +90,19 @@ body {
   background-color: var(--dark-grey);
   border-radius: 50%;
   transition: all .2s ease;
+  user-select: none;
 }
 
 .buttons__container li:hover {
-  background-color: var(--orange);
-  color: var(--white);
-  cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
 }
 
 .buttons__container .marked {
-  background-color: var(--light-grey);
-  color: var(--white);
+    background-color: var(--light-grey);
+    color: var(--white);
+    user-select: none;
 }
 
 .buttons__container > a {
