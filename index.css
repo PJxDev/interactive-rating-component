@@ -112,7 +112,10 @@ body {
   user-select: none;
 }
 
-.buttons__container > a {
+.buttons__container > a, .reset__button {
+  align-self: center;
+  justify-self: center;
+  border: none;
   background-color: var(--orange);
   color: var(--white);
   border-radius: 1rem;
@@ -124,7 +127,7 @@ body {
   transition: all 0.2s ease;
 }
 
-.buttons__container > a:hover {
+.buttons__container > a:hover, .reset__button:hover {
   background-color: var(--white);
   color: var(--orange);
   cursor: pointer;

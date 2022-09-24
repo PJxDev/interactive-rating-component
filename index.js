@@ -19,11 +19,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
   });
 
   document.querySelector("#submit__btn").addEventListener("click", (e) => {
-    console.log(rateSelected);
-
     document.querySelector("#main-card").style.display = "none";
     document.querySelector("#thanks-card").style.display = "flex";
-    document.querySelector("#result-text").innerHTML = `You selected ${rateSelected} out of 5`
+    document.querySelector(
+      "#result-text"
+    ).innerHTML = `You selected ${rateSelected} out of 5`;
+  });
 
+  document.querySelector(".reset__button").addEventListener("click", (e) => {
+    document.querySelector("#thanks-card").style.display = "none";
+    document.querySelector("#main-card").style.display = "flex";
   });
 });
