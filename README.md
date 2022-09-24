@@ -44,6 +44,7 @@ Users should be able to:
 ### Continued development
 
 In the future, it would be really interesting to continue working in some features like:
+
   - Introducing the rating in a database to keep tracking
   - Show the average rating with all the data from the database
   - Improve the code and clean some CSS and JavaScript, and make them minified
